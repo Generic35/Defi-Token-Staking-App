@@ -6,5 +6,5 @@ A decentralized finance token staking app, a bank, allowing user to stake mock d
 Here is an example of the user unstaking and cashing in his reward. 
 We can see his balance increase by 100 mDai tokens.
 
-<img src="https://user-images.githubusercontent.com/8581678/142071478-17d9798d-282a-4df6-bd37-9473b6351a5c.gif" width="70%" height="70%" />
+<img src="https://user-images.githubusercontent.com/8581678/142071478-17d9798d-282a-4df6-bd37-9473b6351a5c.gif" width="90%" height="90%" />
 
