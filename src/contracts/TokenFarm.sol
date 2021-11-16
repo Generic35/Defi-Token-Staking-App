@@ -52,5 +52,17 @@ contract TokenFarm {
         }
     }
 
-    // 3. Unstake Tokens (withdraw)
+    function unstakeTokens() public {
+        uint256 balance = stakingBalance[msg.sender];
+        require(balance > 0, "staking balance cannot be 0");
+
+        // transfer mock dai token back to the investor
+        daiToken.transfer(msg.sender, balance);
+
+        // reset staking balance
+        stakingBalance[msg.sender] = 0;
+
+        // update staking status
+        isStaking[msg.sender] = false;
+    }
 }
